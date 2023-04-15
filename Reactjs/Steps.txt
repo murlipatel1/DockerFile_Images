@@ -1,0 +1,16 @@
+1. You must install the nodejs , docker and respective dependencies.
+
+2. Copy this Dockerfile and .dockerignore in your react app.
+
+3. Open the terminal in that react app directory
+	Run this script:
+	docker build -t imagename .
+	
+	Example:
+	docker build -t dockerreactimage:dev .
+
+4. After this commoand you can find your image in your Docker desktop.
+	Now to run your react app
+
+	Run this script:
+	docker run -it -p 3000:3000 dockerreactimage:dev
